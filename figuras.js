@@ -21,11 +21,23 @@ function areaCuadrado(lado){
 function calcularTriangulo(){
     const inputOne = parseInt(document.getElementById("triangle-first-input").value);
     const inputTwo = parseInt(document.getElementById("triangle-second-input").value);
-    const inputThree = parseInt(document.getElementById("triangle-third-input").value);
+    const inputBase = parseInt(document.getElementById("triangle-base-input").value);
     const inputHeight = parseInt(document.getElementById("triangle-height-input").value);
 
-    alert("El perímetro del triangulo es de " + perimetroTriangulo(inputOne,inputTwo, inputThree) + "cm");
-    alert("El área del triangulo es de " + areaTriangulo(inputThree, inputHeight) + "cm^2");
+    alert("El perímetro del triangulo es de " + perimetroTriangulo(inputOne,inputTwo, inputBase) + "cm");
+    alert("El área del triangulo es de " + areaTriangulo(inputBase, inputHeight) + "cm^2");
+}
+
+function calcularAlturaIsosceles(){
+    const inputOne = parseInt(document.getElementById("triangle-first-input").value);
+    const inputTwo = parseInt(document.getElementById("triangle-second-input").value);
+    const inputBase = parseInt(document.getElementById("triangle-base-input").value);
+
+    if(inputOne == inputTwo && inputOne != inputBase){
+        document.getElementById('triangle-height-input').value = Math.sqrt(inputOne**2 - (inputBase**2)/4);
+    }
+    else
+        alert("Las medidas no corresponden a un triángulo isósceles.");
 }
 
 function perimetroTriangulo(ladoUno, ladoDos, base){
