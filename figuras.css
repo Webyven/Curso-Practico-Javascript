@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    color:azure;
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1250px;
+}
+
+main section{
+    padding: 15px;
+    width: 500px;
+    height: auto;
+    margin: 15px;
+    border: 1px solid gainsboro;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+main section h2 {
+    padding: 10px;
+}
+
+main section form label{
+    margin-left: 10px;
+}
+
+#square-input, 
+#triangle-first-input,
+#triangle-second-input,
+#triangle-third-input,
+#triangle-height-input,
+#circle-input,
+button
+{
+    margin: 10px;
+    padding: 5px;
+    width: calc(100% - 20px);
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+}
+
+button{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+input:focus{
+    outline: none !important;
+    box-shadow: 0px 0px 5px gainsboro;
+}
+
+button:active{
+    background-color: gainsboro;
+}
