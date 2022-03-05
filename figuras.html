@@ -7,10 +7,60 @@
     <title>Figuras geométricas | Curso práctico de Javascript</title>
 </head>
 <body>
-    <h1>
-        Figuras geométricas
-    </h1>
+    <header>
+        <h1>
+            Figuras geométricas
+        </h1>
+    </header>
+    <main>
+        <section>
+            <h2>Calcula el área y el perímetro de un cuadrado</h2>
+            <form action="#">
+                <label for="square-input">
+                    Escribe cuánto mide cada lado de tu cuadrado:
+                    <input id="square-input" type="number">
+                </label>
+                <button type="button" onclick="calcularCuadrado()">Calcular área y perímetro</button>
+            </form>
+        </section>
 
+        <section>
+            <h2>Calcula el área y el perímetro de un triángulo</h2>
+            <form action="#">
+                <label for="triangle-first-input">
+                    Escribe cuánto mide el primer lado del triángulo:
+                    <input id="triangle-first-input" type="number">
+                </label>                
+                <br>
+                <label for="triangle-second-input">
+                    Escribe cuánto mide el segundo lado del triángulo:
+                    <input id="triangle-second-input" type="number">
+                </label>
+                <br>
+                <label for="triangle-third-input">
+                    Escribe cuánto mide el tercer lado del triángulo:
+                    <input id="triangle-third-input" type="number">
+                </label>
+                <br>
+                <label for="triangle-height-input">
+                    Escribe la altura del triángulo:
+                    <input id="triangle-height-input" type="number">
+                </label>
+                <button type="button" onclick="calcularTriangulo()">Calcular área y perímetro</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Calcula el área y el perímetro de un círculo</h2>
+            <form action="#">
+                <label for="circle-input">
+                    Escribe el radio de tu círculo:
+                    <input id="circle-input" type="number">
+                </label>
+                <button type="button" onclick="calcularCirculo()">Calcular área y perímetro</button>
+            </form>
+        </section>
+    </main>
     <script src="./figuras.js"></script>
 </body>
 </html>
