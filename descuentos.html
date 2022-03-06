@@ -4,27 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="figuras.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Porcentajes y descuentos</h1>
+        <p>Este es el segundo taller del Curso Práctico de JavaScript</p>
     </header>
-    <p>Este es el segundo taller del Curso Práctico de JavaScript</p>
     
     <main>
         <section>
-            <h2>Calcula el precio a pagar con un descuento aplicado</h2>
+            <h2>Calculadora de descuentos</h2>
             <form action="#">
                 <label for="input-price">
                     Precio: 
-                    <input type="number" id="input-price">
+                    <input onkeyup="calculatePrice()" type="number" id="input-price">
                 </label>
                 <label for="input-discount">
                     Descuento:
-                    <input type="number" id="input-discount">
+                    <input onkeyup="calculatePrice()" type="number" id="input-discount">
                 </label>
-                <button onclick="calculatePrice()">Calcular precio</button>
             </form>
             <p id="result-price"></p>
         </section>

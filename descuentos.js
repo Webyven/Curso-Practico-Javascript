@@ -11,6 +11,13 @@ function calculatePrice(){
 
     const result = calcularPrecioConDescuento(price, disc);
 
-    document.getElementById("result-price").innerText = "El precio con descuento son $" + result;    
+    const stringRes = "El precio con descuento son $" + result; 
+    
+    if(stringRes.includes("$NaN")){
+        document.getElementById("result-price").innerText = "";
+    }
+    else{
+        document.getElementById("result-price").innerText = stringRes;
+    }
 }
 
