@@ -61,12 +61,7 @@ main section form label{
     margin-left: 10px;
 }
 
-#square-input, 
-#triangle-first-input,
-#triangle-second-input,
-#triangle-base-input,
-#triangle-height-input,
-#circle-input,
+input,
 button
 {
     margin: 10px;

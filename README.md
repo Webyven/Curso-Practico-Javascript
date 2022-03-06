@@ -1,6 +1,4 @@
-# Curso-Practico-Javascript
-
-...
+# Curso Practico Javascript
 
 ## Taller #1: Figuras geométricas:
 
